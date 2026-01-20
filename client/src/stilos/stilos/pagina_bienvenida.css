@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    --verde: #0c443a;
+    --limon: #25d1b2;
+    --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+  }
+  
+  section {
+    min-height: 100vh;
+    padding: 0 8%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    /* margin-top: 1rem; */
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: var(--degradado);
+    font-size: 1rem;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+  }
+  
+  .inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/fondo2.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* .inicio .imagen img {
+    width: 40vw;
+    min-width: 100px; 
+    animation: float 3s linear infinite;
+  } */
+
+  .inicio img {
+    width: 40vw;
+    min-width: 100px; 
+    animation: float 3s linear infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0rem);
+    }
+    50% {
+      transform: translateY(-3.5rem);
+    }
+  }
+  
+  .inicio .content h3 {
+    font-size: 3.5rem;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .inicio .content span {
+    font-size: 3.5rem;
+    color: darkcyan;
+    text-transform: uppercase;
+   
+  }
+  
+  .inicio .content p {
+    margin-top: 5px;
+    color: #060606;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .inicio {
+      flex-flow: column;
+    }
+
+    .inicio .content{
+      width: 100%;
+    }
+  
+    .inicio .imagen{
+      width: 100%;
+      margin-top: 80px;
+    }
+
+    .inicio .imagen img {
+      width: 300px
+    }
+  
+    .inicio .content h3 {
+      font-size: 2.8rem;
+    }
+
+    .inicio .content span {
+      font-size: 2.8rem;
+    }
+  
+    .inicio .content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+
+  @media (max-width: 368px) {
+  .inicio .content h3 {
+    font-size: 1.9rem;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  .inicio .content h3 {
+    font-size: 1.5rem;
+  }
+
+  .inicio .content span {
+    font-size: 1.5rem;
+  }
+
+  .inicio .content p {
+    font-size: 0.7rem;
+  }
+
+  .inicio .imagen img {
+    width: 100%
+  }
+}

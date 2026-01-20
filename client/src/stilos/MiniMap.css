@@ -1,0 +1,35 @@
+/* src/styles/MiniMap.css */
+.mini-map {
+  border: 2px solid #3f51b5;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Ancho fijo para el widget */
+  margin-bottom: 20px; /* Espaciado inferior */
+  margin-top: 20px;
+  /* margin: 15px; */
+}
+
+.map-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #002db5d2;
+  color: #ffffff;
+  border: none;
+  border-radius: 0 0 16px 16px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.map-button:hover {
+  background-color: #0324ffa1;
+}
+
+.map-button:focus {
+  outline: none;
+}
+
+.map-button:active {
+  transform: translateY(2px);
+}

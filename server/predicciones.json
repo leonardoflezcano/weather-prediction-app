@@ -1,0 +1,114 @@
+{
+    "ultimas_predicciones": [
+        {
+            "temperatura_max": 20.775319708264657,
+            "temperatura_min": 14.907696818537888,
+            "precipitacion": 1.965226301825223,
+            "humedad": 41.201360591819835,
+            "direccion_viento": 218.99343657852705,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 4.959024487110338,
+            "fecha": "11-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 15.43333883444977,
+            "temperatura_min": 12.447173476828038,
+            "precipitacion": 0.7370715946108874,
+            "humedad": 39.49184351636346,
+            "direccion_viento": 220.95476743570492,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 3.233329629409163,
+            "fecha": "12-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 13.01040356017297,
+            "temperatura_min": 9.694963149843176,
+            "precipitacion": 0,
+            "humedad": 40.11601025449522,
+            "direccion_viento": 219.36524146894962,
+            "descripcion_clima": "Nublado",
+            "calidad_aire": 2.531367661345393,
+            "fecha": "13-07-2024",
+            "iconUrl": "/images/cloudy.png"
+        },
+        {
+            "temperatura_max": 15.376893470697745,
+            "temperatura_min": 9.755669345356809,
+            "precipitacion": 0,
+            "humedad": 41.0223380696941,
+            "direccion_viento": 220.89724199303896,
+            "descripcion_clima": "Nublado",
+            "calidad_aire": 2.999390421821233,
+            "fecha": "14-07-2024",
+            "iconUrl": "/images/cloudy.png"
+        },
+        {
+            "temperatura_max": 16.313968469556855,
+            "temperatura_min": 10.662006659312118,
+            "precipitacion": 0.23741177326490615,
+            "humedad": 41.297714578555386,
+            "direccion_viento": 218.66803486926796,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 1.2894795174138038,
+            "fecha": "15-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 20.565662077477164,
+            "temperatura_min": 16.970440845604983,
+            "precipitacion": 2.0686302619962094,
+            "humedad": 40.188749247813824,
+            "direccion_viento": 219.18780071142305,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 4.530535083086108,
+            "fecha": "16-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 13.801759706971586,
+            "temperatura_min": 8.913494688263333,
+            "precipitacion": 2.53310628100812,
+            "humedad": 40.402651784298016,
+            "direccion_viento": 219.76760137766667,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 3.275027906761132,
+            "fecha": "17-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 13.413388739649413,
+            "temperatura_min": 9.04624290980413,
+            "precipitacion": 0,
+            "humedad": 40.75270854926849,
+            "direccion_viento": 220.78909689859603,
+            "descripcion_clima": "Nublado",
+            "calidad_aire": 4.526283439486974,
+            "fecha": "18-07-2024",
+            "iconUrl": "/images/cloudy.png"
+        },
+        {
+            "temperatura_max": 14.767120337014479,
+            "temperatura_min": 11.140784992407038,
+            "precipitacion": 0.8926089693474952,
+            "humedad": 39.96249912730147,
+            "direccion_viento": 218.62693360349215,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 1.7020572119041146,
+            "fecha": "19-07-2024",
+            "iconUrl": "/images/rainy.png"
+        },
+        {
+            "temperatura_max": 21.305961423227604,
+            "temperatura_min": 18.032579834621487,
+            "precipitacion": 0.7362515289764606,
+            "humedad": 39.99466203894245,
+            "direccion_viento": 222.01658433053262,
+            "descripcion_clima": "Lluvioso",
+            "calidad_aire": 1.5277049171942294,
+            "fecha": "20-07-2024",
+            "iconUrl": "/images/rainy.png"
+        }
+    ]
+}

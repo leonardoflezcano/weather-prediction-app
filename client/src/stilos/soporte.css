@@ -1,0 +1,23 @@
+.soporte {
+    background: linear-gradient(to right, #864ddf, #203376);
+    color: aliceblue;
+    text-align: center;
+    padding: 2rem;
+}
+
+.soporte h1 {
+    color: #ffffff;
+}
+
+.contactanos h2 {
+    color: rgb(74, 141, 255);
+}
+
+input, textarea {
+    border: 1px solid #d1d5db; /* Light gray border */
+}
+
+input:focus, textarea:focus {
+    border-color: #6b46c1; /* Primary color */
+    box-shadow: 0 0 0 1px #6b46c1; /* Primary color */
+}

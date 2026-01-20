@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: black; */
+}
+
+.Title_estadistica{
+    color: #f5f5f5;
+    font-size: xx-large;
+    justify-content: center;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: x-large;
+    text-align: left;
+    color: aliceblue;
+}
+ 
+.contenedor_select {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas, cada una ocupando 1fr (50%) */
+    grid-gap: 20px; /* Espacio entre columnas */
+    margin-bottom: 20px; /* Espacio debajo del contenedor */
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.columna h2 {
+    margin-bottom: 10px;
+}
+
+.contenedor_estadistica {
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) 1fr;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 300px); /* Cada fila tendrá 400px de alto */
+    /* border: 10px solid black; */
+    margin: auto 8px;
+    padding: 25px;
+    /* overflow: hidden; */
+}
+
+.contenedor_vista_estadistica {
+    display: grid;
+    grid-template-columns: minmax(110px, 1fr) 1fr;
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 250px); /* Cada fila tendrá 400px de alto */
+    margin: auto 8px;
+    padding: 25px;
+}
+
+.contenedor_vista_estadistica > div {
+    background-color: rgb(45, 45, 45);
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    color: aliceblue;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 6%;
+    /* Añade esta línea para asegurar que las imágenes se ajusten correctamente */
+    overflow: hidden; /* Para ocultar cualquier parte de la imagen que se salga del contenedor */
+}
+
+.contenedor_estadistica > div {
+    background-color: rgb(45, 45, 45);
+    box-shadow: 2px 2px 10px black;
+    padding: 20px;
+    color: aliceblue;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 6%;
+}
+
+.estadistica_figura img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.grafico_figura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+     /*La imagen se recorta para llenar el contenedor mientras mantiene su relación de aspect*/
+}
+
+#curve_chart_1, #curve_chart_2, #curve_chart_3, #curve_chart_4, #curve_chart_11 {
+    grid-column: 1 / -1; /* Ocupa todas las columnas */
+    grid-row: 3 / 3; /* Ocupa la tercera fila */
+}
+
+#temp_table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#temp_table th, #temp_table td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: left;
+    color: white;
+}
+
+#temp_table th {
+    /* background-color: #044202; */
+    background-color: #051d01;
+}
+
+#temp_table td {
+    /* background-color: #051d01; */
+    background-color: #044202;
+}
+
+@media (max-width: 800px) {
+    .contenedor_estadistica {
+        grid-template-columns: 1fr; /* Una sola columna */
+        grid-template-rows: repeat(5, 300px); /* Cuatro filas, cada una con 400px de alto */
+        margin: auto 10px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 770px) {
+    .contenedor_estadistica > div {
+        width: 90%;   
+    }
+
+    #curve_chart_1, #curve_chart_2, #curve_chart_3, #curve_chart_4, #curve_chart_11 {
+        grid-column: 1 / 1; /* Ocupa todas las columnas */
+        grid-row: 5 / 5; /* Ocupa la tercera fila */
+    }
+}
+
+@media (max-width: 550px) {
+    .contenedor_estadistica > div {
+        width: 85%;   
+    }
+}
+
+@media (max-width: 395px) {
+    .contenedor_estadistica > div{
+        width: 80%;
+    }
+} 
+
+

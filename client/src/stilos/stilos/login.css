@@ -1,0 +1,156 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* login.css */
+
+/* .login-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #6d28d9, #3b82f6);
+  padding: 1rem;
+} */
+
+.login-background {
+background-color:#0b3252;
+}
+
+#contenedor-login{
+  border-radius: 20px;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-header {
+  text-align: center;
+  padding: 2rem;
+}
+
+.login-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #246eee;
+}
+
+.login-subtitle {
+  color: #718096;
+}
+
+.login-form {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #4a5568;
+}
+
+.input-container {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #cbd5e0;
+}
+
+.form-input {
+  padding-left: 2.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.375rem;
+  focus:outline-none;
+  focus:ring-2;
+  focus:ring-purple-500;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  height: 1rem;
+  width: 1rem;
+  color: #6d28d9;
+}
+
+.checkbox-label {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.forgot-password {
+  color: #6d28d9;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  width: 100%;
+  background: linear-gradient(to right, #6d28d9, #3b82f6);
+  color: #ffffff;
+  font-weight: 700;
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: linear-gradient(to right, #5b21b6, #2563eb);
+}
+
+.login-footer {
+  padding: 1rem;
+  background-color: #f7fafc;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.signup-text {
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.signup-link {
+  color: #6d28d9;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}

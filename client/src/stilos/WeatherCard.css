@@ -1,0 +1,89 @@
+/* src/styles/WeatherCard.css */
+.weather-card {
+    margin-top: 20px;
+    padding: 0px;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ancho fijo para el widget */
+    margin-bottom: 20px; /* Espaciado inferior */
+    /* margin: 15px; */
+  }
+
+  .weather-background {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+  }
+  
+  .weather-card-title {
+    font-size: 2.0em;
+    color: #ffffffff;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .weather-card-content {
+    display: flex;
+    justify-content: space-between; /* Espacio entre columnas */
+  }
+  
+  .temperature-column {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .details-column {
+    flex: 1; /* Toma el 50% del espacio disponible */
+  }
+  
+  .temperature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .weather-info {
+    width: 100%;
+  }
+  
+  .weather-info-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .weather-info-label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #ffffffff;
+  }
+
+  .weather-info-label-temperatura {
+    font-weight: bold;
+    color: #ffffffff;
+    font-size: 2.9em;
+  }
+  
+  .weather-info-value {
+    margin-right: 10px;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #ffffffff;
+  }
+
+  .weather-icon {
+    font-size: 1.9em;
+    margin-right: 10px;
+    color: #f7f2f2b8;
+  }
+
+    
+  

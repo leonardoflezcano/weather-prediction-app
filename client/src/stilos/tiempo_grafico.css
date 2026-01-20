@@ -1,0 +1,69 @@
+.weather-content {
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.weather-now {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.weather-forecast {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+.weather-hour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    min-width: 80px;
+}
+
+.weather-hour img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.weather-graph {
+    position: relative;
+    height: 200px;
+    width: 100%;
+}
+
+#weatherChart {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-button {
+    background-color: #dbdbdb;
+    border: none;
+    color: #000000;
+    padding: 2px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: 0px;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+.scroll-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}

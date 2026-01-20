@@ -1,0 +1,44 @@
+@media (max-width: 1206px) {
+  
+  .min-height-78vh {
+    min-height: 92vh;
+  }
+
+  #nav-item-left {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 995px) {
+  .custom_nav-container .nav_search-btn {
+    background-position: center;
+  }
+
+  .hero_area::before {
+    display: none;
+  }
+
+  .min-height-78vh {
+    min-height: 92vh;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+  .navbar-toggler{
+    width: 60px;
+  }
+}
+
+@media (max-width: 420px) {}
+
+@media (max-width: 360px) {}
+
+
+
+/* @media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+} */

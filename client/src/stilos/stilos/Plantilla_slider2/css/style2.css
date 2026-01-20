@@ -1,0 +1,130 @@
+/* Reseteo general */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Contenedor principal */
+.contenedor_slider {
+  width: 100%;
+  height: 95vh; /* Altura completa de la ventana */
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+/* Estilos específicos del slider */
+.slider_section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.slider_section .slider-container {
+  display: flex;
+  align-items: flex-start; /* Alinea los elementos al principio (arriba) */
+  justify-content: space-between;
+  height: 100%; /* Asegura que el contenedor ocupa el 100% de la altura */
+}
+
+.slider_section .detail-box {
+  width: 100%; /* Ocupa el 50% del contenedor */
+  z-index: 4;
+  color: #ffffff;
+  padding-top: 10%; /* Ajusta el espacio superior si es necesario */
+  margin: -105px 50px;
+}
+
+.slider_section .detail-box h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.8rem;
+  margin: 0px 135px 0px 0px;
+}
+
+.slider_section .detail-box p {
+  width: 65%;
+  margin-top: 30px;
+}
+
+.slider_section .detail-box .slider-link {
+  display: inline-block;
+  padding: 10px 35px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 25px;
+  margin: 35px 0px 00px 120px;
+}
+
+.slider_section .detail-box .slider-link:hover {
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+}
+
+.slider_section .img-box {
+  width: 100%; /* Ocupa el 50% del contenedor */
+  height: 100%; /* Asegura que ocupa la altura completa del contenedor */
+  position: relative;
+  z-index: 0;
+  margin-left: -35%;
+
+}
+
+.slider_section .img-box img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa toda la altura del contenedor */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.slider_section .slider_bg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #864ddf, #203376);
+  z-index: 3;
+  clip-path: polygon(0 0, 60% 0, 37% 100%, 0% 100%);
+}
+
+.slider_section .carousel-control-prev,
+.slider_section .carousel-control-next {
+  left: 47.6%;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  border-radius: 100%;
+}
+
+.slider_section .carousel-control-prev {
+  background-image: url(../images/prev.png);
+  background-color: #2e02fe;
+  top: 50%;
+  transform: translate(-50%, 0);
+}
+
+.slider_section .carousel-control-next {
+  background-image: url(../images/next.png);
+  background-color: #2e02fe;
+  top: calc(50% - 30px);
+  transform: translate(0, -50%);
+}
+
+.slider_section .carousel-control-prev:hover{
+  background-color: #160532;
+}
+
+.slider_section .carousel-control-next:hover{
+  background-color: #160532;
+}

@@ -1,0 +1,90 @@
+/* WeatherForecast.css */
+
+/* Estilos del contenedor principal */
+.weather-forecast-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #34495e; /* Fondo azul oscuro envolviendo el slider */
+  border-radius: 12px;
+ 
+}
+
+.forecast-title {
+  font-size: 1.8em;
+  color: #f0f0f0; /* Texto blanco para el título */
+  margin-bottom: 20px;
+}
+
+/* Contenedor del slider para agregar margen interno */
+.slider-container {
+  background-color: #f0f0f0; /* Fondo gris claro para el contenido interno del slider */
+  padding: 70px;
+  border-radius: 10px;
+}
+
+/* Estilos de los puntos del slider */
+.slick-dots li button:before {
+  color: #ffffff; /* Azul grisáceo medio para los puntos */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffffff; /* Azul oscuro para el punto activo */
+}
+
+/* Contenedor de cada predicción */
+.forecast-item {
+  padding: 10px;
+}
+
+/* Estilos de la tarjeta */
+.card {
+  background: #f3f5f7; /* Fondo gris claro */
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mejorada al pasar el ratón */
+}
+
+.card-title {
+  font-size: 1.3em;
+  color: #274060; /* Azul grisáceo */
+  margin-bottom: 10px;
+}
+
+.temperature {
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1.1em;
+  color: #4a6378; /* Azul grisáceo medio para el texto de la temperatura */
+  margin: 5px 0;
+}
+
+/* Estilos del icono de clima */
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+/* Mensaje de "No hay datos" */
+.no-data {
+  font-size: 1.2em;
+  color: #8a9ca9; /* Azul claro grisáceo para el mensaje de sin datos */
+}
+
+/* Mensaje de error */
+.error-message {
+  color: #d9534f;
+  font-size: 1.1em;
+  margin-top: 10px;
+}

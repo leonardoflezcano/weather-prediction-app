@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  max-width: 75px; /* Ajusta según el tamaño deseado */
+  height: 100%;
+  object-fit: contain;
+}
+
+
+.foto_perfil {
+  max-width: 55px;
+  object-fit: cover; /* Esto asegura que la imagen cubra todo el contenedor */
+  border-radius: 50%; /* Hace que los bordes sean circulares */
+  overflow: hidden; /* Esconde cualquier parte de la imagen que se salga del contenedor */
+  width: 50px; /* Define un ancho fijo */
+  height: 50px;
+}
+
+/*header section*/
+.header_section {
+  position: static;
+  margin-top: -20px;
+}
+
+.header_section,
+.hero_area {
+  margin: 0px;
+  padding: 0px;
+}
+
+.hero_area {
+  height: 13vh;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#864ddf),
+    to(#203376)
+  );
+  background: linear-gradient(to right, #864ddf, #203376);
+  padding: 1px;
+}
+
+.hero_area::before {
+  content: "";
+  width: 65%;
+  height: 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub_page .hero_area::before {
+  display: none;
+}
+
+.hero_area.sub_pages {
+  height: auto;
+}
+
+.header_section {
+  margin: 0px;
+}
+
+
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+.custom_nav-container.navbar-expand-xl .navbar-nav .nav-link {
+  padding: 10px 16px;
+  color: #f9fcfb;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fafcfd;
+}
+
+.custom_nav-container .nav_search-btn {
+  background-image: url(../images/search-icon.png);
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-brand span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f9fcfb;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.custom_nav-container {
+  position: relative; /* o absolute si es necesario */
+  z-index: 9;
+  top: 0;
+  left: 0;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url(../images/menu.png);
+  background-size: 40px;
+}

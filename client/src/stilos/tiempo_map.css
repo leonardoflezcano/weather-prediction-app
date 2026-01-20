@@ -1,0 +1,59 @@
+/* tiempo_map */
+.tiempo-map__container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 110px;
+  }
+  
+  .tiempo-map__row {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .tiempo-map__col {
+    flex: 1;
+    margin: 20px 5px;
+  }
+  
+  .tiempo-card__col {
+    flex: 1;
+    margin: 20px 5px;
+  }
+  
+  @media (max-width: 1250px) {
+    .tiempo-map__container{
+      margin: 0px 20px;
+    }
+
+  }
+
+  /* Cambiar a dos filas cuando el ancho de la pantalla es menor a 990px */
+  @media (max-width: 1050px) {
+    .tiempo-map__row {
+        flex-direction: column;
+        margin: 3px 10px;
+    }
+  
+    .tiempo-map__col {
+        margin: 0px 0px;
+    }
+
+    .tiempo-card__col {
+        margin: 0px 0px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .tiempo-map__row {
+        margin: 2px 5px;
+    }
+  
+    .tiempo-map__col {
+        margin: 0px 0px;
+    }
+
+    .tiempo-card__col {
+        margin: 0px 0px;
+    }
+  }
+  

@@ -1,0 +1,55 @@
+/* witged.css */
+.widget-container.pro {
+  width: 670px;
+  height: 240px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: background 1s ease-in-out;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.widget-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.widget-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.progress-wrapper {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1.1rem;
+}
+
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.detail i {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+}

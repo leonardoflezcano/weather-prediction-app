@@ -1,0 +1,152 @@
+/* Perfil.css */
+
+/* añadir cuenta */
+.contenedor-añadir-cuenta{
+  margin: 130px 0px ;
+  width: 350px;
+  border: 2px solid black;
+  background-color: #0224e6;
+}
+
+/* visibilidad perfil */
+.boton-editar-perfil {
+    background-color: #4e2071; /* Fondo morado */
+    color: #ffffff; /* Texto blanco */
+    border: 2px solid #ffffff; /* Borde blanco */
+    padding: 0.5rem 1rem; /* Padding */
+    border-radius: 0.375rem; /* Border radius */
+    cursor: pointer; /* Cursor pointer */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 150px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  }
+  
+  .boton-editar-perfil:hover {
+    color: #000000; /* Texto negro en hover */
+    /* border: 2px solid #000000; */
+    background-color: #ffffff;
+    font-size: medium;
+    transform: scale(1.1); /* Agranda el botón */
+  }
+
+.bloque_perfil{
+  border: 3px solid #000000;
+  border-radius: 10px;
+}
+  
+.foto_perfil{
+  height: 50px;
+}
+
+.no-underline{
+  /* background-color: #4a00a6; */
+  /* hover:text-black */
+}
+
+.no-underline:hover{
+  background-color: #4a00a6;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.contenedor-form-editar-botones {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 1rem; /* Opcional: Espacio entre los botones */
+  margin: 0px auto;
+}
+
+.boton-form-editar-perfil {
+  background-color: #202c71; /* Fondo morado */
+  color: #ffffff; /* Texto blanco */
+  border: 2px solid #ffffff; /* Borde blanco */
+  padding: 0.7rem 1rem; /* Padding */
+  border-radius: 150px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor pointer */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+}
+
+.boton-form-editar-perfil:hover {
+  color: #ffffff; /* Texto blanco en hover */
+  background-color: #0fae4e; /* Fondo verde en hover */
+  font-size: medium;
+  transform: scale(1.1); /* Agranda el botón */
+}
+
+.input-editar{
+  border-radius: 50px;
+}
+
+.input-editar:hover{
+  background-color: #c5c5c5;
+  color: #000000; 
+}
+
+.editar-perfil-foto:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.icono-camara{
+  opacity: 0;
+  cursor: pointer;
+}
+
+.icono-camara:hover{
+  opacity: 1;
+}
+
+/* Modal añadir foto */
+.contenedor-modal-perfil{
+  background-color: #b6bcdf;
+  width: 400px;
+}
+
+/* CSS para el contenedor de la imagen */
+.contedor-añadir-img {
+  margin: 25px;
+  width: 150px; /* Tamaño del contenedor */
+  height: 150px; /* Tamaño del contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CSS para la imagen dentro del contenedor */
+.contedor-añadir-img img {
+  width: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
+  height: 100%; /* Ajusta el tamaño de la imagen para que ocupe todo el contenedor */
+  object-fit: cover; 
+  border-radius: 50%; 
+}
+
+.contenedor-form-añadir-foto-botones {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 1rem; /* Opcional: Espacio entre los botones */
+}
+
+.boton-form-añadir-foto {
+  margin: 50px 0px 0px 0px;
+  background-color: #ffffff; /* Fondo morado */
+  color: #000000; /* Texto blanco */
+  border: 2px solid #ffffff; /* Borde blanco */
+  padding: 0.7rem 0.5rem; /* Padding */
+  border-radius: 150px; /* Bordes redondeados */
+  cursor: pointer; /* Cursor pointer */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  border: 1px solid #000000;
+}
+
+.boton-form-añadir-foto:hover {
+  color: #ffffff; /* Texto blanco en hover */
+  background-color: #0fae4e; /* Fondo verde en hover */
+  font-size: medium;
+  transform: scale(1.1); /* Agranda el botón */
+}
+
+.hidden{
+  display: none;
+}

@@ -1,0 +1,120 @@
+/* Estilos para el contenedor principal de la lista de comentarios */
+.comment-list-container {
+  width: 100%;
+  margin-top: 20px;
+  padding: 0 20px; /* Añade padding a los lados para separar del borde de la página */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos para el contenedor de cada comentario */
+.comment-container {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la información del usuario */
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre la información del usuario y el comentario */
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Asegúrate de tener un ícono de perfil con bordes redondeados */
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+/* Estilos para la información del comentario */
+.comment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.days-ago {
+  font-size: 12px;
+  color: #666;
+}
+
+.comment-text {
+  margin-bottom: 10px;
+}
+
+/* Contenedor para los botones de like y dislike */
+.like-dislike-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para los botones de like y dislike */
+.like-button,
+.dislike-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Fondo transparente */
+  color: #007BFF; /* Color del texto */
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.like-button:hover,
+.dislike-button:hover {
+  color: #0056b3; /* Cambia el color de texto en hover */
+}
+
+/* Iconos en los botones de like y dislike */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Contenedor para los botones de responder y compartir */
+.reply-share-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Espacio arriba de los botones de responder y compartir */
+}
+
+/* Estilos para los botones de responder y compartir */
+.reply-button,
+.share-button {
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Fondo transparente */
+  color: #007BFF; /* Color del texto */
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición de color al pasar el mouse */
+}
+
+.reply-button:hover,
+.share-button:hover {
+  color: #0056b3; /* Cambia el color de texto en hover */
+}
+
+/* Iconos en los botones de responder y compartir */
+.reply-button .icon,
+.share-button .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

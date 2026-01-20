@@ -1,0 +1,58 @@
+/* src/stilos/estaciones.module.css */
+.estacionesContainer {
+    background-color: #34495e;
+    color: white;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+.title {
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.card {
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.cardTemperature {
+    background-color: #6B5B95;
+}
+
+.cardWind {
+    background-color: #A0D8B3;
+}
+
+.cardPrecipitation {
+    background-color: #6B5B95;
+}
+
+.cardHumidity {
+    background-color: #A0D8B3;
+}
+
+.cardAirQuality {
+    background-color: #6B5B95;
+}
+
+.stationCard {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stationTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* .stationDetails {
+    font-size: 1.125rem;
+} */
+
+
+ 

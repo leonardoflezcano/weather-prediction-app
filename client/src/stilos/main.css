@@ -1,0 +1,47 @@
+/* global.css */
+
+/* Importa Tailwind CSS y estilos personalizados */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#white{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+#black{
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+/* Estilos globales */
+/* body {
+  @apply bg-gray-100 text-gray-900; 
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+} */
+/* 
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold; 
+}
+
+a {
+  @apply text-blue-500 underline; 
+}
+
+button {
+  @apply bg-blue-500 text-white py-2 px-4 rounded;
+} */
+
+/* .container {
+  @apply max-w-6xl mx-auto px-4;
+} */
+
+/* Estilos específicos para el componente Estaciones */
+/* .estaciones-container {
+  @apply bg-[#34495e] text-white p-4 rounded-lg;
+} */
+
+/* Puedes agregar más clases específicas según sea necesario */

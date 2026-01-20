@@ -1,0 +1,286 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  /* background: url(../../../src/images/fondo3.avif) no-repeat center center; */
+  background-size: cover;
+}
+
+.contenedor_landing{
+  /* background-color: #000000;
+  color: azure; */
+}
+
+#caracteristica{
+  background: linear-gradient(to right, #864ddf, #203376);
+  transition: transform 0.3s ease-in-out; /* Transición suave */
+}
+
+#caracteristica:hover {
+  transform: scale(1.05); /* Agrandar el contenedor un 5% al hacer hover */
+}
+
+/* .home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../../src/images/fondo3.avif);
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh;
+}
+
+.imagen {
+  width: 40%;
+  margin: 18px;
+}
+
+.home .imagen img {
+  width: 40vw;
+}
+
+.somos {
+  width: 60%;
+  padding: 45px;
+}
+
+.somos h1 {
+  font-size: 2.5rem;
+  color: rgb(1, 33, 33);
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.somos h3 {
+  font-size: 1.5rem;
+  color: rgb(2, 76, 76);
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.somos p {
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+} */
+
+/* Ventana al clima */
+
+.ventana_clima h2{
+  color: rgb(16, 56, 56);
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-align: center;
+  justify-content: center;
+}
+
+.ventana_clima p{
+  color: black;
+  font-size: 1.1rem;
+}
+
+.pensado_clima {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../../src/images/fondo3.avif);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.persona_pensando {
+  flex: 1;
+  margin-right: 20px; /* Espacio entre la imagen y las características */
+}
+
+.pensado_clima .persona_pensando img {
+  width: 100%;
+  height: auto;
+  max-height: 100%; 
+  object-fit: cover; 
+}
+
+.features {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 25px;
+}
+
+.feature {
+  flex: 1 1 45%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.feature p {
+  margin: 10px 0 0;
+}
+
+/* Cambiar a una sola columna en pantallas pequeñas */
+@media (max-width: 1205px) {
+  .pensado_clima {
+    flex-direction: column;
+  }
+
+  .persona_pensando {
+    margin-right: 0;
+    margin-bottom: 20px;
+    /* width: 80%; */
+    border: #02020f solid 4px;
+  }
+
+  .features {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+
+/* .Características principales */
+.Características_principales {
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  min-height: 60vh;
+  background-position: center;
+  /* background: url(../../../src/images/); */
+  background-color: mediumorchid;
+}
+
+.Características_principales h2{
+  font-size: 2.5rem;
+  color: rgb(1, 33, 33);
+  font-weight: 800;
+  text-align: center;
+  justify-content: center;
+}
+
+.features_principal {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 25px;
+}
+
+.feature_principal {
+  background-color: #02020f;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, background-color 0.3s ease;
+
+}
+
+.feature_principal:hover {
+  background-color: rgb(9, 9, 80);
+  cursor: pointer;
+  transform: scale(1.05); /* Agranda el elemento */
+}
+
+.feature_principal img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.feature_principal h3 {
+  color: #007bff;
+  margin-top: 0;
+}
+
+.feature_principal p {
+  margin: 10px 0 0;
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .features_principal {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+
+  .feature_principal {
+    padding: 15px;
+  }
+  
+  .feature_principal img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature_principal img {
+    max-height: 100px;
+  }
+
+  .feature_principal h3 {
+    font-size: 1.2rem;
+  }
+
+  .feature_principal p {
+    font-size: 0.9rem;
+  }
+}
+
+/* El clima en tus manos */
+.clima_en_tus_manos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  padding: 15px;
+}
+
+.clima_en_tus_manos h2{
+    color: rgb(16, 56, 56);
+    font-size: 2.3rem;
+    font-weight: 800;
+    justify-content: center;
+}
+
+.clima_manos {
+  width: 60%;
+}
+
+.manos img {
+  height: 100%;
+  width: 100%;
+}
+
+.manos {
+  width: 30%;
+  border: #333;
+}
+
+@media (max-width: 600px) {
+  .clima_en_tus_manos {
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en la columna */
+    gap: 10px;
+  }
+
+  .clima_manos, .manos {
+    width: 100%; /* Ocupan toda la anchura disponible */
+  }
+
+  .manos img {
+    height: auto;
+    width: 100%; /* La imagen se ajusta a la anchura del contenedor */
+  }
+}

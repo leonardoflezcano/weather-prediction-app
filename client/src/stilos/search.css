@@ -1,0 +1,101 @@
+/* Contenedor del formulario de búsqueda */
+.search-form {
+  position: relative;
+  display: inline-block;
+}
+
+.nav_search-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para el campo de búsqueda */
+#buscador {
+  position: absolute;
+  top: -10px;
+  width: 370px; 
+  z-index: 1000;
+  margin-left: 8px;
+  padding: 15px 20px;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  color: aliceblue;
+  background-color: #44206a; 
+  transition: width 0.3s ease; 
+  overflow: hidden; 
+}
+
+#buscador::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+/* Expande el campo de búsqueda cuando esté enfocado o activo */
+#buscador:focus,
+.show-input #buscador { /* Clase alternativa para mostrar el input */
+  width: 370px; /* Ancho completo cuando esté enfocado o visible */
+}
+
+/* Lista de sugerencias */
+.suggestions-list {
+  width: 100%;
+  position: absolute;
+  top: 50px; 
+  background-color: #44206a;
+  border-radius: 10px;
+  list-style-type: none;
+  margin-left: 10px;
+  color: #ffffff;
+  border: 1px solid #ddd;
+  width: 370px;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+  color: aliceblue;
+}
+
+.suggestion-item:hover {
+  background-color: #57347a;
+}
+
+/* Ajustes de diseño responsivo */
+@media (max-width: 1206px) {
+  .suggestions-list {
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .suggestions-list {
+    margin-top: 0px;
+  }
+
+}
+
+/* Media query para pantallas de 640px o menos */
+@media (max-width: 640px) {
+  .suggestions-list {
+    width: 200px;     
+  }
+
+  #buscador:focus,
+.show-input #buscador{
+    width: 200px;
+  }
+}
+
+/* Media query para pantallas de 360px o menos */
+@media (max-width: 360px) {
+  #buscador:focus,
+.show-input #buscador {
+    width: 140px; /* Ancho más pequeño en pantallas pequeñas */
+  }
+
+  .suggestions-list {
+    width: 140px; /* Ancho más pequeño en pantallas pequeñas */
+  }
+}

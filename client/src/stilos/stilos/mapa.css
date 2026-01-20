@@ -1,0 +1,37 @@
+/* Default styles for single-column layout */
+
+.map-labels {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Text color */
+  background-color: white; /* Background color */
+  padding: 3px 2px;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.contenedor-panel {
+  width: 100%;
+}
+
+/* Media query for two-column layout */
+@media (max-width: 1100px) {
+  .container-fluid {
+    display: contents;
+    flex-direction: row;
+  }
+
+  .map-container,
+  .info-container {
+    width: 100%;
+  }
+
+  .map-container {
+    order: 1;
+  }
+
+  .info-container {
+    order: 2;
+  }
+}

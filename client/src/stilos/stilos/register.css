@@ -1,0 +1,96 @@
+/* General styles for the registration page */
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* General styles for the registration page */
+
+.contenedor-backgraound-register{
+  background-color: #0b3252;
+}
+
+#contenedor-registro{
+  border-radius: 20px;
+}
+
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, #6d28d9, #3b82f6);
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .text-gray-800 {
+    color: #1f2937;
+  }
+  
+  .text-gray-600 {
+    color: #4b5563;
+  }
+  
+  .border-gray-300 {
+    border-color: #d1d5db;
+  }
+  
+  .focus\:ring-purple-500:focus {
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.5);
+  }
+  
+  .bg-gradient-to-r {
+    background: linear-gradient(to right, #6d28d9, #6d28d9);
+  }
+  
+  .hover\:from-purple-700:hover {
+    background: linear-gradient(to right, #4c1d95, #6d28d9);
+  }
+  
+  .hover\:to-blue-600:hover {
+    background: linear-gradient(to right, #4c1d95, #1e40af);
+  }
+  
+  .transition-colors {
+    transition: background-color 0.3s;
+  }
+  
+  .focus\:ring-opacity-50:focus {
+    box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.5);
+  }
+  
+  .text-purple-600 {
+    color: #7c3aed;
+  }
+  
+  .text-purple-500 {
+    color: #a855f7;
+  }
+  
+  .text-red-500 {
+    color: #ef4444;
+  }
+  
+  .rounded-md {
+    border-radius: 0.375rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 10px 20px -3px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .border-t {
+    border-top-width: 1px;
+  }
+  
+  .rounded-b-lg {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  
+  .h-4 {
+    height: 1rem;
+  }
+  
+  .w-4 {
+    width: 1rem;
+  }
+  

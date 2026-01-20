@@ -1,0 +1,176 @@
+/* Reseteo de estilos */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --verde: #0c443a;
+  --limon: #25d1b2;
+  --degradado: linear-gradient(90deg, var(--limon), var(--verde));
+}
+
+/* Sección principal */
+section {
+  min-height: 100vh;
+  padding: 0; /* Eliminado el padding lateral */
+  padding-top: 7.5rem; /* Espacio superior */
+  padding-bottom: 2rem; /* Espacio inferior */
+}
+
+/* Estilo del botón */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--degradado);
+  font-size: 1rem;
+  color: aliceblue;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+/* Estilo del botón "Explora CIFOR" */
+.btn-explora {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #004590;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-explora:hover {
+  background-color: #0056b3;
+  color: aliceblue;
+  transform: scale(1.05);
+  text-decoration: none;
+}
+
+/* Estilo de la sección de inicio */
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Alinea el contenido a la izquierda */
+  background: url(../images/fondo-cifor.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Ajustes para la imagen en la sección de inicio */
+.inicio img {
+  width: 40vw; /* Tamaño responsivo */
+  min-width: 100px;
+  margin-top: -100px; /* Ajusta según sea necesario */
+}
+
+/* Estilo de textos a la izquierda */
+.text-left {
+  margin-left: -30px; /* Ajusta este valor según sea necesario */
+}
+
+.subtitulo-bienvenida{
+  margin-left: 36px;
+}
+
+/* Estilos de texto en la sección de inicio */
+.inicio .content h1,
+.inicio .content h2 {
+  font-size: 3.5rem; /* Tamaño de fuente grande para el título */
+  color: black; /* Asegura que el color sea negro */
+  text-transform: uppercase; /* Mayúsculas */
+  line-height: 1.2;
+}
+
+.inicio .content p {
+  margin-top: 5px;
+  color: #060606;
+  font-size: 1rem; /* Ajuste del tamaño de texto */
+  text-align: justify; /* Justificación del texto */
+  line-height: 1.5; /* Espaciado de línea */
+}
+
+/* Clase de texto justificado */
+.text-justificado {
+  text-align: justify;
+  font-size: 0.95rem; /* Tamaño de texto */
+  margin-left: 50px; /* Ajusta según sea necesario */
+}
+
+/* Clase para títulos alineados a la izquierda */
+.titulo-izquierda {
+  margin-left: 50px; /* Ajusta según sea necesario */
+}
+
+/* Asegura que los títulos h1 dentro de la clase inicio tengan color negro */
+.inicio h1 {
+  color: black; /* Color negro */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .inicio {
+    flex-flow: column; /* Coloca los elementos en columna */
+  }
+
+  .inicio .content {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+
+  .inicio .imagen {
+    width: 100%;
+    margin-top: 80px; /* Espaciado superior */
+  }
+
+  .inicio .imagen img {
+    width: 300px; /* Tamaño fijo en pantallas pequeñas */
+  }
+
+  .inicio .content h1,
+  .inicio .content h2 {
+    font-size: 2.8rem; /* Tamaño de fuente reducido */
+  }
+
+  .inicio .content p {
+    font-size: 0.75rem; /* Texto más pequeño en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 368px) {
+  .inicio .content h1 {
+    font-size: 1.9rem; /* Tamaño más pequeño para encabezado h1 */
+  }
+
+  .inicio .content h2 {
+    font-size: 1.5rem; /* Tamaño más pequeño para encabezado h2 */
+  }
+
+  .inicio .content p {
+    font-size: 0.7rem; /* Texto aún más pequeño */
+  }
+
+  .inicio .imagen img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho */
+  }
+}
+
+/* Estilos para la imagen del logo en la esquina inferior derecha */
+.logo-cifor {
+  position: absolute;
+  bottom: 10px; /* Ajusta la distancia desde el borde inferior */
+  right: 0px;  /* Ajusta la distancia desde el borde derecho */
+  margin-left: 20px;
+  width: 150px; /* Tamaño ajustado para la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+
+

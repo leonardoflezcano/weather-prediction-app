@@ -1,0 +1,54 @@
+.mapa {
+  padding: 30px;
+}
+
+/* Contenedor general del componente */
+.panel {
+  background-color: aliceblue;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  margin-left: 5px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Contenedor de tarjeta + gráfico */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Tamaño proporcional de la tarjeta y el gráfico */
+.card-container,
+.chart-container {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Tabla ajustada debajo */
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Dropdown */
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.empty-message {
+  font-size: 1.5rem;
+  color: #555;
+  text-align: center;
+  margin-top: 3rem;
+}

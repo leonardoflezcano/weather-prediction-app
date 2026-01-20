@@ -1,0 +1,74 @@
+/* Estilo general del contenedor */
+.leaflet-control-geosearch {
+    position: relative; /* Contenedor relativo para posicionar correctamente las opciones */
+    background-color: #f4f4f4 !important; /* Fondo del contenedor */
+    border: 1px solid #ccc !important; /* Borde del contenedor */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+    z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+    overflow: visible; /* Permitir que las opciones se vean */
+  }
+  
+  /* Estilo del campo de entrada */
+  .leaflet-control-geosearch input {
+    font-size: 14px; /* Tamaño de la fuente */
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde visible */
+    outline: none; /* Sin borde adicional al enfocarse */
+    color: #333; /* Color del texto */
+    background-color: #fff; /* Fondo blanco para visibilidad */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    box-sizing: border-box; /* Evitar que el padding afecte el tamaño total */
+    z-index: 10; /* Asegurarse de que esté por encima del contenedor */
+  }
+  
+  /* Estilo del texto dentro del campo de entrada */
+  .leaflet-control-geosearch input::placeholder {
+    color: #888; /* Color del marcador de posición */
+  }
+  
+  /* Opciones del menú desplegable */
+  .leaflet-control-geosearch .geosearch__suggestions {
+    position: absolute; /* Fuera del flujo normal */
+    top: 100%; /* Directamente debajo del campo */
+    left: 0;
+    width: 100%; /* Asegura que se alinee con el campo */
+    background-color: #fff; /* Fondo del menú */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 4px; /* Bordes redondeados */
+    max-height: 150px; /* Altura máxima */
+    overflow-y: auto; /* Permitir desplazamiento si hay muchas opciones */
+    z-index: 9999999999999999999; /* Asegura que esté al frente */
+  }
+  
+  /* Asegurar que las opciones sean visibles */
+  .leaflet-control-geosearch .geosearch__suggestion {
+    padding: 8px 12px; /* Espaciado interno */
+    color: #000000 !important; /* Color del texto (negro) */
+    background-color: #ffffff !important; /* Fondo blanco */
+    border-bottom: 1px solid #eee; /* Separador entre opciones */
+    cursor: pointer; /* Cambiar el cursor al pasar */
+    white-space: nowrap; /* Evitar saltos de línea */
+    overflow: hidden; /* Ocultar texto largo */
+    text-overflow: ellipsis; /* Mostrar "..." para texto largo */
+  }
+  
+  /* Estilo al pasar el cursor sobre una opción */
+  .leaflet-control-geosearch .geosearch__suggestion:hover {
+    background-color: #e9ecef !important; /* Cambio de color al pasar el cursor */
+    color: #000000 !important; /* Texto más oscuro */
+  }
+  
+  /* Scroll bar personalizado para el menú */
+  .leaflet-control-geosearch .geosearch__suggestions::-webkit-scrollbar {
+    width: 6px; /* Ancho del scrollbar */
+  }
+  
+  .leaflet-control-geosearch .geosearch__suggestions::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color del scrollbar */
+    border-radius: 3px; /* Bordes redondeados */
+  }
+  
+  .leaflet-control-geosearch .geosearch__suggestions::-webkit-scrollbar-track {
+    background-color: #f4f4f4; /* Fondo del track */
+  }

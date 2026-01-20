@@ -1,0 +1,27 @@
+/* Ajusta el margen en la sección de información */
+.info_section {
+    margin-top: 20px; /* Reduce o ajusta según sea necesario */
+    margin-bottom: 20px;
+  }
+
+.footer_bg{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+} 
+  
+  /* Ajusta el margen en la sección del pie de página */
+  .footer_section {
+    margin-top: 10px; /* Reduce o ajusta según sea necesario */
+    margin-bottom: 10px;
+  }
+  
+  /* Ajuste global de margen para el contenedor principal */
+  .footer_bg {
+    margin: 0; /* Asegúrate de que no haya margen externo si no es necesario */
+    padding: 0; /* Ajusta el padding si es necesario */
+  }
+  
+  img{
+    height: 20px;
+  }
